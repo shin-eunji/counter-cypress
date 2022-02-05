@@ -1,4 +1,4 @@
-# cypress-test-logic
+# Counter Cypress
 
 > 일정: 2022-02-04
 >
