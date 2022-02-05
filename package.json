@@ -1,21 +1,21 @@
 {
-  "name": "cypress-test-logic",
+  "name": "counter-cypress",
   "version": "1.0.0",
-  "description": "> 일정: 2022-02-04 > > 목표: Cypress로 더 좋은 테스크 코드를 짤 수 있는 방법을 배우고, 더 나아가 놓쳤던 부분을 알아가기 > > 강의: [인프런] 하루만에 Cypress로 작성하는 자바스크립트 E2E 테스트 코드",
+  "description": "Counter Cypress",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shin-eunji/cypress-test-logic.git"
+    "url": "git+https://github.com/shin-eunji/counter-cypress.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/shin-eunji/cypress-test-logic/issues"
+    "url": "https://github.com/shin-eunji/counter-cypress/issues"
   },
-  "homepage": "https://github.com/shin-eunji/cypress-test-logic#readme",
+  "homepage": "https://github.com/shin-eunji/counter-cypress#readme",
   "devDependencies": {
     "cypress": "^9.4.1"
   }
