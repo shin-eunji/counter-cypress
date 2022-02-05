@@ -55,17 +55,32 @@ Cypress
 // counter.spec.js
 describe("example counter app", () => {
   beforeEach(() => {
-   cy.visit("http://127.0.0.1:8080/");
+   cy.visit(url);
   });
 
   it("최초에 카운터 값을 0으로 보여준다.", () => { // title
     cy.get("#value").invoke("text").should("eq", "0"); // id는 value이고, invoke는 text로 0이다.
   })
+  
+  it("- 버튼을 눌렀을 때, count는 0보다 작아지는 경우 감소하지 못한다. (Min 값이 0이다.)", () => {
+    cy.get(".decrease-btn").click();
+    cy.get("#value").invoke("text").should("eq", "0");
+  })
+
+  it("reset 버튼을 누르면 counter가 0으로 초기화된다.", () => {
+    cy.get(".increase-btn").click();
+    cy.get(".reset-btn").click();
+    cy.get("#value").invoke("text").should("eq", "0");
+  })
 });
 ```
 
 cypress 결과
+이런 식으로 테스트를 진행하면서 테스트 과정을 해보았다.
+
 ![cypress 테스트 결과](./src/image/counter-spec.png)
+
+![cypress 테스트 결과](./src/image/all-counter.png)
 
 
 
